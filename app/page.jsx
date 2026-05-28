@@ -266,8 +266,7 @@ const Sel=({label,val,set,opts})=>(
 const Modal=({title,onClose,ch})=>(
   <div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.55)",zIndex:200,display:"flex",alignItems:"flex-end"}} onClick={e=>{if(e.target===e.currentTarget)onClose();}}>
     <div className="up" style={{background:C.white,borderRadius:"18px 18px 0 0",padding:20,width:"100%",maxWidth:500,margin:"0 auto",maxHeight:"100dvh",overflowY:"auto",boxSizing:"border-box",boxSizing:"border-box",
-    WebkitOverflowScrolling:"touch", paddingBottom:"120px"}}
-> }}>
+    WebkitOverflowScrolling:"touch", paddingBottom:"120px"}}>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16}}>
         <h3 style={{fontSize:15,fontWeight:700,color:C.ink}}>{title}</h3>
         <button onClick={onClose} style={{background:C.bg,border:"none",borderRadius:8,padding:6,cursor:"pointer"}}><Ico n="x" s={15} c={C.mute}/></button>
